@@ -6,13 +6,88 @@
 <body>
 
 <h1>Background</h1>
-<p>The repository demostrates a basic implementation of using  of 
+<p>This repository demonstrates a method to share both static maps and data as well as Tableau Public. 
+  Note this page only uses basic HTML, a more advanced approach using JavaScript and the loading of dynamic data 
+  from Google Sheets or CSV files will be added later. The webpage is organized by sections, please scroll down to find the various examples.</p>
+
   
-  very basic use of HTML to share static images of a data research project and a link to a more interactive Tableau Public Dashboard.</p>
+  <p>This data for this project started as three GPX files that were created from data recorded during three 
+    Turkey Trot Runs in Lincoln, Nebraska in 2016 - 2018. Each of the GPX files included a timestamp, 
+    latitude, longitude and elevation value as recorded by the GPS device. <br>
+    
+     <img src="images/gpx_format.png" width="400px" alt="GPX Data format example"><br>
+    
+    
+     <p>These three data files were loaded into 
+    ChatGPT and the elevation gained and the speed in MPH was calculated between the points. The data was then combined into one GEOJSON file and downloaded from ChatGPT. </p>
+
+<p>The GeoJSON file was then loaded into Tableau Public for use in a Dashboard. Additionally, screenshots of bar, 
+  line and tables graphics were captured from Tableau to provide examples, however it should be noted that these graphics 
+  could just as easily been created using other data analysis tools such as R, Excel or MATLAB.
 
 
+  
   <h3>Overview map of site</h3>
+  A screenshot of the Lincoln Memorial Cemetery.<br>
   <img src="images/map.png" width="600px" alt="Overview map of site">
 
+
+
+
+
+
+
+    <h3>Tableau</h3>
+  Tableau Public Dashboards are stored on a free Tableau Server. These dashboards can be linked to using a link such as https://public.tableau.com/app/profile/christopher.seeger/viz/LincolnRun/Dashboard1
+
+  <br><br>
+  Tableau Dashboards can also be directly embedded into an HTML page and appear as shown below.
+ 
+  <div class='tableauPlaceholder' id='viz1768490888952' style='position: relative'>
+	<noscript>
+		<a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LincolnRun&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+	</noscript>
+	<object class='tableauViz' style='display:none;'>
+		<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+		<param name='embed_code_version' value='3' />
+		<param name='site_root' value='' />
+		<param name='name' value='LincolnRun&#47;Dashboard1' />
+		<param name='tabs' value='no' />
+		<param name='toolbar' value='yes' />
+		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LincolnRun&#47;Dashboard1&#47;1.png' />
+		<param name='animate_transition' value='yes' />
+		<param name='display_static_image' value='yes' />
+		<param name='display_spinner' value='yes' />
+		<param name='display_overlay' value='yes' />
+		<param name='display_count' value='yes' />
+		<param name='language' value='en-US' />
+	</object>
+</div>
+<script type='text/javascript'>
+var divElement = document.getElementById('viz1768490888952');
+var vizElement = divElement.getElementsByTagName('object')[0];
+if(divElement.offsetWidth > 800) {
+	vizElement.style.minWidth = '420px';
+	vizElement.style.maxWidth = '650px';
+	vizElement.style.width = '100%';
+	vizElement.style.minHeight = '587px';
+	vizElement.style.maxHeight = '887px';
+	vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+} else if(divElement.offsetWidth > 500) {
+	vizElement.style.minWidth = '420px';
+	vizElement.style.maxWidth = '650px';
+	vizElement.style.width = '100%';
+	vizElement.style.minHeight = '587px';
+	vizElement.style.maxHeight = '887px';
+	vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+} else {
+	vizElement.style.width = '100%';
+	vizElement.style.height = '1077px';
+}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+  
 </body>
 </html>
