@@ -9,8 +9,9 @@
 	Author: Profesor Christopher J. Seeger<br>
 	Copyright 2026, free to share and reuse with attribution
 </i>
-<br><br>
+
 	
+	<br><hr>
 <h1>Background</h1>
 <p>This repository demonstrates a method to share both static maps and data as well as Tableau Public dashboards. 
   Note this page only uses basic HTML, no CSS. A good tutorial for writing HTML can be found at <a href="https://www.w3schools.com/html/default.asp" target="_blank">https://www.w3schools.com/html/default.asp</a>
@@ -65,14 +66,14 @@
 		
 		<i>Note that it can take a few minutes for page updates to be processed to the web server after an edit is committed.</i>
 		
-<br>
 
-
+	<br><hr>
   <h3>Overview map of site</h3>
   A screenshot of the Lincoln Memorial Cemetery.<br>
   <img src="images/map.png" width="500px" alt="Overview map of site">
 
-
+	
+	<br><hr>
   <h3>Static Graphics</h3>
   Screenshots or downloads from analysis software can be added tot he website as a jpg or png <br>
 	The following three images were created in Tableau and then captured as a screenshot and saved as PNG images to GitHub.<br><br>
@@ -87,15 +88,22 @@
 	This is just HTML text below the table and could be used to decribe what the viewer is seeing. 
 	Note tabular data could also be saved from Excel in HTML format and added to the GitHub html page.<br><br>
 
-
+	<br><hr>
 	  <h3>Dynamic Graphics</h3>
-	Graphics and Maps that are generated dynamically can be added to a website using JavaScript. While the JavaScript can be customed developed using libraries such as Leaflet, JQuery and other graphinc tools, a comprehensive library such as <a href = "https://www.highcharts.com/demo" target="_blank">HighCharts</a> can also be implemented. Additional example son these tools will be added here in the future. 
-	<br><br>
+	<p>Graphics and Maps that are generated dynamically can be added to a website using JavaScript. 
+	While the JavaScript can be customed developed using libraries such as <a href = "https://leafletjs.com" target = "_blank">Leaflet</a> and <a href = "https://jquery.com" target = "_blank">JQuery</> and other graphinc tools, 
+	a comprehensive library such as <a href = "https://www.highcharts.com/demo" target="_blank">HighCharts</a> can also be implemented. The data for these examples can be stored as flat text files on GitHub (CSV, JSON or GeoJSON) or within Google Sheets. 
+	A benefit of Google Sheets is the data can be maintained and updated in Google Sheets and they directly linked to from the web page.<br>
+	Additional examples on these tools will be added here in the future...</p>
 
+
+		<br><hr>
     <h3>Tableau</h3>
   Tableau Public Dashboards are stored on a free Tableau Server. These dashboards can be linked to using a link such 
 	as <a href = "https://public.tableau.com/app/profile/christopher.seeger/viz/LincolnRun/Dashboard1" target = "_Blank">https://public.tableau.com/app/profile/christopher.seeger/viz/LincolnRun/Dashboard1</a><br>
-	This interactive tool allows user to filter the map for the GPS route recorded for all or a selected year. The data can also be filtered by the speed recorded between GPS points. 
+	This interactive tool allows user to filter the map for the GPS route recorded for all or a selected year. The data can also be filtered by the speed recorded between GPS points. <br>
+		While this demo utilize GeoJSON data, the free Tableau Public can also connect directly to a Google Sheet. Tableau Public will auto refresh the data once every 24 hours, but can also be manually refreshed as needed.
+		Tableau Public is not able to directly connect to databases such as MySQL, or PostGreSQL -- Did I mention Public is the free version of this software???
 
   <br><br>
 	
