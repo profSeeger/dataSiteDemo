@@ -59,13 +59,46 @@
 
 	<p>Creating a GitHub Webpage is farily straight forward and only takes a few minutes. 	</p>
 		<ol>
-			<li>Create a new GitHub Repository</li>
-			<li>more steps to be addedd...</li>
+			<li>Create a new GitHub Repository and give it short but meaningful name</li>
+			<li>Provide a descrioption of the Repository  - you can edit this more later.</li>
+			<li>Confirm visiibility is set to Public</li>
+			<li>Enable the 'Add README'</li>
+			<li>Leave the Add .gitignore and Add license as the default</li>
+			<li>Press "Create repository"</li>
+			<li>The repository will be created and will display the contents of the README which you can edit.</li>
+			<li>Next you need to enable GitHub Pages. Select the menu near the top right of the screen</li>
+			<li>In the settings look on the left menu for "Pages" and click it.</li>
+			<li>In the GitHub Pages config leave Deploy from Branch selected</li>
+			<li>Change the Branch from None to Main. This will then allow you to select /root or /docs.  <br>
+			If you select /root then your website will live in the root of the GitHub - for a basic site this is OK, but best practice would bee to have the files living in a directory named docs /</li>
+			<li>Press Save (Note in this example I used /Docs</li>
+			<li>You can optionally create a custome domain, read instructions if this is of interest, but for now just return to the main repository by clicking the name of the repo in the top left of screen.</li>
+			<li>Since /docs was set to the location of the web pages, you need to create that directory and a file in it to use as the main page. <br>
+			Create a new file and name it docs/ this will make the directory and a new name box will appear for you to write index.html</li>
+			<li>a basic HTMl code block is below and can be copied and pasted into the editor. Maybe change the title and add a hello your name to the body of the page.</li>
+			<li>Commit the page</li>
+			<li>GitHup will process and start to build the page. This can take a few minutes to complete, You can check the status by clicking the Actions menu item</li>
+			<li>To access the URL that the page is located at, go back to the main repository page, in the upper right it wiss say "About" with a gear icon. Click the gear. 
+				Where it asks for a Website address, check "Use your GitHub Pages website" and save changes</li>
+			<li>The about will now show the link to your page. If the action to create your page has completed you will be able to click the link and see your site.</li>
+			<li>Continue to edit your index.html page, add other pages, data, or images. Be careful of case in file names, and put images and such in appropriate directories to avoid creation of an unorganized file structure.</li>
 		</ol>
 		
-		
-		<i>Note that it can take a few minutes for page updates to be processed to the web server after an edit is committed.</i>
-		
+<pre></pre>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+</pre>
+				
 
 	<br><hr>
   <h3>Overview map of site</h3>
