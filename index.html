@@ -25,9 +25,38 @@
     
      <img src="images/gpx_format.png" width="400px" alt="GPX Data format example"><br>
     
-    
      <p>These three data files were loaded into 
-    ChatGPT and the elevation gained and the speed in MPH was calculated between the points. The data was then combined into one GEOJSON file and downloaded from ChatGPT. </p>
+    ChatGPT and the elevation gained and the speed in MPH was calculated between the points. The data was then combined into one GEOJSON file and downloaded from ChatGPT. A sample of the geojson file looks as follows:</p>
+
+
+<pre>
+  <code>
+   {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.700561,
+          40.741621
+        ]
+      },
+      "properties": {
+        "ID": 1,
+        "timestamp": "2016-11-24T14:33:12+00:00",
+        "elevation_m": 381.8,
+        "elevation_gain_ft": 0.0,
+        "speed_mph": null
+      }
+    }
+  </code>
+</pre>
+
+	
+  
+
+	
+	
+	<img src="images/gpx_format.png" width="400px" alt="GPX Data format example"><br>
 
 <p>The GeoJSON file was then loaded into Tableau Public for use in a Dashboard. Additionally, screenshots of bar, 
   line and tables graphics were captured from Tableau to provide examples, however it should be noted that these graphics 
